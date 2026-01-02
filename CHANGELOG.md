@@ -17,3 +17,7 @@ All notable changes to mcpc are documented here.
 ## 0.0.4 — Transports
 
 - Add subprocess, HTTP and in-memory pipe transports behind one interface.
+
+## 0.0.5 — Observability
+
+- Add a structured logger, a metrics registry and build stamping.

@@ -21,3 +21,8 @@ All notable changes to mcpc are documented here.
 ## 0.0.5 — Observability
 
 - Add a structured logger, a metrics registry and build stamping.
+
+## 0.1.0-rc1 — Client core
+
+- Add a background read loop that correlates responses by id.
+- Support concurrent calls, per-call timeouts and cancellation.

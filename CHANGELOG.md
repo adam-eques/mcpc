@@ -26,3 +26,8 @@ All notable changes to mcpc are documented here.
 
 - Add a background read loop that correlates responses by id.
 - Support concurrent calls, per-call timeouts and cancellation.
+
+## 0.1.0-rc2 — Reliability
+
+- Add dial helpers, retry with backoff, progress tracking and a connection pool.
+- Record request counts and latencies in a metrics registry.

@@ -31,3 +31,7 @@ All notable changes to mcpc are documented here.
 
 - Add dial helpers, retry with backoff, progress tracking and a connection pool.
 - Record request counts and latencies in a metrics registry.
+
+## 0.1.0-rc3 — Agent runner
+
+- Execute a JSON plan of tool calls with ${N} output chaining between steps.

@@ -35,3 +35,7 @@ All notable changes to mcpc are documented here.
 ## 0.1.0-rc3 — Agent runner
 
 - Execute a JSON plan of tool calls with ${N} output chaining between steps.
+
+## 0.1.0-rc4 — Configuration
+
+- Add layered configuration: defaults, JSON file and MCPC_* environment.

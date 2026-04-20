@@ -39,3 +39,7 @@ All notable changes to mcpc are documented here.
 ## 0.1.0-rc4 — Configuration
 
 - Add layered configuration: defaults, JSON file and MCPC_* environment.
+
+## 0.1.0-rc5 — Command-line client
+
+- Add the mcpc CLI: ping, tools, describe, call, run and an interactive repl.

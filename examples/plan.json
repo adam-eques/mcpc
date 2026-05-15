@@ -1,0 +1,25 @@
+{
+  "steps": [
+    {
+      "name": "index knowledge",
+      "tool": "rag_index",
+      "arguments": {
+        "documents": [
+          {"id": "go", "text": "Go uses goroutines and channels for concurrency"},
+          {"id": "rust", "text": "Rust guarantees memory safety without a garbage collector"},
+          {"id": "bread", "text": "Sourdough bread is made with a wild yeast starter"}
+        ]
+      }
+    },
+    {
+      "name": "search",
+      "tool": "rag_search",
+      "arguments": {"query": "safe systems programming language", "k": 2}
+    },
+    {
+      "name": "hash the query",
+      "tool": "hash",
+      "arguments": {"text": "safe systems programming language", "algorithm": "sha256"}
+    }
+  ]
+}

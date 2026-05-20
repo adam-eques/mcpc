@@ -1,0 +1,10 @@
+{
+  "transport": "stdio",
+  "server": {
+    "command": "go",
+    "args": ["run", "github.com/adam-eques/mcpkit/cmd/mcpkit"]
+  },
+  "timeoutSeconds": 30,
+  "log": {"level": "debug", "format": "text"},
+  "client": {"name": "mcpc-dev", "version": "0.1.0"}
+}

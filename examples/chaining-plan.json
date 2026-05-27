@@ -1,0 +1,7 @@
+{
+  "steps": [
+    {"name": "make id", "tool": "uuid"},
+    {"name": "store it", "tool": "kv_set", "arguments": {"key": "session", "value": "${1}"}},
+    {"name": "read it back", "tool": "kv_get", "arguments": {"key": "session"}}
+  ]
+}

@@ -43,3 +43,8 @@ All notable changes to mcpc are documented here.
 ## 0.1.0-rc5 — Command-line client
 
 - Add the mcpc CLI: ping, tools, describe, call, run and an interactive repl.
+
+## 0.1.0-rc6 — Documentation
+
+- Add architecture, protocol, CLI, library, transport and agent guides.
+- Add a library example and sample plans.

@@ -48,3 +48,8 @@ All notable changes to mcpc are documented here.
 
 - Add architecture, protocol, CLI, library, transport and agent guides.
 - Add a library example and sample plans.
+
+## 0.1.0 — Release 0.1.0
+
+- Add cross-platform CI, a distroless image and release automation.
+- First tagged release of the zero-dependency MCP client, paired with mcpkit.

@@ -1,0 +1,19 @@
+{
+  "transport": "stdio",
+  "server": {
+    "command": "mcpkit",
+    "args": []
+  },
+  "http": {
+    "endpoint": "http://localhost:8080/rpc"
+  },
+  "timeoutSeconds": 30,
+  "log": {
+    "level": "info",
+    "format": "text"
+  },
+  "client": {
+    "name": "mcpc",
+    "version": "0.1.0"
+  }
+}

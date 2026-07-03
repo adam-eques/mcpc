@@ -12,12 +12,17 @@ zero third-party dependencies.** It connects to any MCP server over stdio
 
 ## Why
 
-The interesting part of an MCP client is the concurrency: one connection, many
-in-flight requests, responses arriving out of order, plus server-initiated
-notifications. mcpc solves this with a single background read loop that
-demultiplexes responses to their waiting callers by request id — so you can fan
-out calls from as many goroutines as you like, with per-call timeouts and
-cancellation that propagates to the server as `notifications/cancelled`.
+There is an official MCP Go SDK, and for most production clients it's the right
+choice. mcpc is a deliberate alternative — a from-scratch, zero-dependency
+implementation built to make the interesting part legible: the concurrency.
+
+One connection, many in-flight requests, responses arriving out of order, plus
+server-initiated notifications. mcpc solves this with a single background read
+loop that demultiplexes responses to their waiting callers by request id — so you
+can fan out calls from as many goroutines as you like, with per-call timeouts and
+cancellation that propagates to the server as `notifications/cancelled`. It's all
+on the standard library, so the read loop and the cancellation plumbing are here
+to read, not hidden behind a dependency.
 
 ## Highlights
 

@@ -31,7 +31,7 @@ jobs:
           out=mcpc-${{ matrix.goos }}-${{ matrix.goarch }}
           [ "${{ matrix.goos }}" = "windows" ] && out=$out.exe
           go build -ldflags "-s -w -X github.com/adam-eques/mcpc/internal/version.Version=${GITHUB_REF_NAME}" -o "$out" ./cmd/mcpc
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: mcpc-${{ matrix.goos }}-${{ matrix.goarch }}
           path: mcpc-*
